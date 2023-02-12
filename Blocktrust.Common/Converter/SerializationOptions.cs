@@ -15,7 +15,7 @@ public static class SerializationOptions
         WriteIndented = false
     };
     
-    public static JsonSerializerOptions DisplaxIndented = new()
+    public static JsonSerializerOptions DisplayIndented = new()
     {
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
