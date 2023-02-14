@@ -6,8 +6,8 @@ public class Multicodec
     public const string NameED25519 = "ED25519";
     public static readonly Multicodec X25519Public = new Multicodec(NameX25519, new byte[] { 0xEC }, 236);
     public static readonly Multicodec Ed25519Public = new Multicodec(NameED25519, new byte[] { 0xED }, 237);
-    public static readonly Multicodec X25519Private = new Multicodec(NameX25519, new byte[] { 0x13, 0x02 }, 4864);
-    public static readonly Multicodec Ed25519Private = new Multicodec(NameED25519, new byte[] { 0x13, 0x00 }, 4866);
+    public static readonly Multicodec X25519Private = new Multicodec(NameX25519, new byte[] { 0x13, 0x02 }, 4866);
+    public static readonly Multicodec Ed25519Private = new Multicodec(NameED25519, new byte[] { 0x13, 0x00 }, 4864);
 
     public string Name { get; }
     public byte[] PrefixByte { get; }
