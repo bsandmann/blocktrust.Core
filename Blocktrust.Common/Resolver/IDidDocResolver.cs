@@ -3,5 +3,5 @@
 using Models.DidDoc;
 
 public interface IDidDocResolver {
-    DidDoc? Resolve(string did);
+    Task<DidDoc?> Resolve(string did);
 }

@@ -4,7 +4,7 @@ using Models.Secrets;
 
 public interface ISecretResolver
 {
-    Secret? FindKey(string kid);
-    HashSet<string> FindKeys(List<string> kids);
-    public void AddKey(string kid, Secret secret);
+    Task<Secret?> FindKey(string kid);
+    Task<HashSet<string>> FindKeys(List<string> kids);
+    public Task AddKey(string kid, Secret secret);
 }
